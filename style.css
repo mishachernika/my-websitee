@@ -264,9 +264,10 @@ section:target {
 .navigation {
     text-align: center;
     margin: 30px 0;
-    padding: 20px;
+    padding: 15px;
     background: #f8f9fa;
-    border-radius: 10px;
+    border-radius: 8px;
+    border: 2px solid #dee2e6;
     position: sticky;
     top: 10px;
     z-index: 100;
@@ -274,27 +275,23 @@ section:target {
 }
 
 .navigation a {
-    color: #2c3e50;
+    color: #34495e;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.2em;
-    margin: 0 20px;
-    padding: 10px 20px;
+    font-size: 1.3em;
+    margin: 0 25px;
+    padding: 12px 25px;
     border-radius: 25px;
     transition: all 0.3s ease;
-}
-
-.navigation a:hover {
-    background: #667eea;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
-    transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
 }
 
-/* === ІНДИКАТОР АКТИВНОЇ СЕКЦІЇ === */
-.navigation a.active {
-    background: #667eea;
-    color: white;
+.navigation a:hover {
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(102, 126, 234, 0.4);
 }
 
 /* === АДАПТИВНІСТЬ ДЛЯ НАВІГАЦІЇ === */
@@ -304,8 +301,18 @@ section:target {
     }
     
     .navigation a {
+        display: inline-block;
+        margin: 8px 15px;
+        font-size: 1.1em;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navigation a {
         display: block;
         margin: 5px 0;
-        font-size: 1.1em;
+        font-size: 1em;
+        padding: 8px 15px;
     }
 }
