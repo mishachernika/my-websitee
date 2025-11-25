@@ -329,13 +329,37 @@ a:hover {
 }
 
 /* Стилі для контактних посилань */
-#contacts a {
+/* === КОНТАКТИ === */
+#contacts {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 2px solid #ecf0f1;
+}
+
+#contacts p {
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+}
+
+#contacts strong {
     color: #2c3e50;
+    min-width: 120px;
+    display: inline-block;
+}
+
+#contacts a {
+    color: #667eea;
+    text-decoration: none;
     font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: 8px 15px;
+    border-radius: 8px;
     background: #f8f9fa;
-    border: 1px solid #dee2e6;
+    border: 2px solid #e9ecef;
+    transition: all 0.3s ease;
+    margin-left: 10px;
 }
 
 #contacts a:hover {
@@ -343,5 +367,6 @@ a:hover {
     color: white;
     text-decoration: none;
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+    border-color: #667eea;
 }
